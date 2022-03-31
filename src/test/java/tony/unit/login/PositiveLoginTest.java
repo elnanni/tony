@@ -19,5 +19,6 @@ public class PositiveLoginTest {
 	webInteraction.selectDropDownValue("select box", "//select[@id='input-select']", "//select[@id='input-select']/optgroup[@label='Group1']/option[.='2']");
 	webInteraction.setText("input text", "//input[@id='input-type-text']","Lorem ipsum dolor sit amet, consectetur");
 	webInteraction.changeFrame(null);
+	//prueba
 }
 }
