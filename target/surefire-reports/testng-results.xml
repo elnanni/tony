@@ -2,12 +2,12 @@
 <testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-31T21:08:33Z" name="tony.unit.login.PositiveLoginTest" finished-at="2022-03-31T21:08:58Z" duration-ms="24467">
+  <suite started-at="2022-04-01T22:57:54Z" name="tony.unit.login.PositiveLoginTest" finished-at="2022-04-01T22:58:01Z" duration-ms="7248">
     <groups>
     </groups>
-    <test started-at="2022-03-31T21:08:33Z" name="Command line test" finished-at="2022-03-31T21:08:58Z" duration-ms="24467">
+    <test started-at="2022-04-01T22:57:54Z" name="Command line test" finished-at="2022-04-01T22:58:01Z" duration-ms="7248">
       <class name="tony.unit.login.PositiveLoginTest">
-        <test-method signature="setUp()[pri:0, instance:tony.unit.login.PositiveLoginTest@75881071]" started-at="2022-03-31T15:08:33Z" name="setUp" finished-at="2022-03-31T15:08:58Z" duration-ms="24451" status="PASS">
+        <test-method signature="setUp()[pri:0, instance:tony.unit.login.PositiveLoginTest@75881071]" started-at="2022-04-01T16:57:54Z" name="setUp" finished-at="2022-04-01T16:58:01Z" duration-ms="7238" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
