@@ -21,7 +21,15 @@ public class PositiveLoginTest {
 	webInteraction.setText("search","//input[@id='input-type-search']", "search");
 	webInteraction.setText("url","//input[@id='input-type-url']", "https://codepen.io/anon/pen/XgzJmQ");
 	webInteraction.inputClick("radio", "//input[@type='radio'][@name='input-radio'][@value='2']");
+	webInteraction.setText("enter phone","//input[@id='input-type-tel']" ,"8234563458");
+	webInteraction.numInput("enter number","//input[@id='input-type-number']" ,"15");
 	webInteraction.selectMultipleOption("multiple option", "//select[@id='input-select-multiple']/option[.='REPLACE']", "1;3;2");
+	webInteraction.setText("date", "//input[@id='input-type-date']", "04212022");
+	webInteraction.setText("time", "//input[@id='input-type-time']", "10:20PM");
+	webInteraction.setTextmonth("month", "//input[@id='input-type-month']", "April","2022");
+	webInteraction.setText("week", "//input[@id='input-type-week']", "18,2020");
+	webInteraction.setTextlocal("local time", "//input[@id='input-type-datetime-local']", "05282021","10:25AM");
+	webInteraction.clickSummary("question 1", "//details/summary[contains(., 'Question 1')]");
 	webInteraction.inputClick("normal button", "//button[text()='Normal button']");
 	webInteraction.changeFrame(null);
 	//prueba

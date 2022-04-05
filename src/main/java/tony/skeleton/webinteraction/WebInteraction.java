@@ -19,7 +19,7 @@ public class WebInteraction {
 	}
 	
 	public void navigateToPage (String url) {
-		browser.get(url);
+		browser.get(url); 
 	}
 	
 	public void changeFrame (String id) {
@@ -28,6 +28,10 @@ public class WebInteraction {
 	}
 
 	public void inputClick(String name, String locator) {
+		browser.findElement(By.xpath(locator)).click();
+	}
+	
+	public void clickSummary(String name, String locator) {
 		browser.findElement(By.xpath(locator)).click();
 	}
 		
@@ -49,4 +53,33 @@ public class WebInteraction {
 		action.keyUp(Keys.CONTROL).build().perform();
 	}
 	
+	public void numInput(String name, String locator, String value) {
+		
+		for (int i = 0; i < value.length(); i++) {
+			  
+            // Check if character is
+            // digit from 0-9
+            // then return true
+            // else false
+            if (value.charAt(i) >= '0'
+                && value.charAt(i) <= '9') {
+            }
+            else {
+                System.out.println("No funciono");
+            }
+        }
+		browser.findElement(By.xpath(locator)).sendKeys(value);
+	}
+	
+	public void setTextmonth(String name, String locator, String value, String value2) {
+		browser.findElement(By.xpath(locator)).sendKeys(value);
+		browser.findElement(By.xpath(locator)).sendKeys(Keys.TAB);
+		browser.findElement(By.xpath(locator)).sendKeys(value2);
+	}
+	
+	public void setTextlocal(String name, String locator, String value, String value2) {
+		browser.findElement(By.xpath(locator)).sendKeys(value);
+		browser.findElement(By.xpath(locator)).sendKeys(Keys.TAB);
+		browser.findElement(By.xpath(locator)).sendKeys(value2);
+	}
 }
