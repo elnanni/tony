@@ -30,7 +30,9 @@ public class PositiveLoginTest {
 	webInteraction.setText("week", "//input[@id='input-type-week']", "18,2020");
 	webInteraction.setTextlocal("local time", "//input[@id='input-type-datetime-local']", "05282021","10:25AM");
 	webInteraction.clickSummary("question 1", "//details/summary[contains(., 'Question 1')]");
+	webInteraction.color ("color", "//input[@id='input-type-color']", "20", "15", "89");
 	webInteraction.inputClick("normal button", "//button[text()='Normal button']");
+	webInteraction.selectFile("file", "//input[@id='input-type-file']", "C:\\development\\file.txt");
 	webInteraction.changeFrame(null);
 	//prueba
 }

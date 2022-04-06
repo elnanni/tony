@@ -5,6 +5,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import tony.armor.osInteraction.OsInteraction;
 
@@ -81,5 +83,23 @@ public class WebInteraction {
 		browser.findElement(By.xpath(locator)).sendKeys(value);
 		browser.findElement(By.xpath(locator)).sendKeys(Keys.TAB);
 		browser.findElement(By.xpath(locator)).sendKeys(value2);
+	}
+	
+	public void color(String name, String locator, String color1, String color2, String color3) {
+		browser.findElement(By.xpath(locator)).click();
+		Actions actionProvider = new Actions(browser);
+		actionProvider.sendKeys(Keys.TAB).build().perform();
+		actionProvider.sendKeys(Keys.TAB).build().perform();
+		actionProvider.sendKeys(Keys.TAB).build().perform();
+		actionProvider.sendKeys(color1).build().perform();
+		actionProvider.sendKeys(Keys.TAB).build().perform();
+		actionProvider.sendKeys(color2).build().perform();
+		actionProvider.sendKeys(Keys.TAB).build().perform();
+		actionProvider.sendKeys(color3).build().perform();
+		}
+	
+	@SuppressWarnings("deprecation")
+	public void selectFile(String name, String locator, String value) {
+		new WebDriverWait(browser, 10).until(ExpectedConditions.elementToBeClickable(By.xpath(locator))).sendKeys(value);
 	}
 }
