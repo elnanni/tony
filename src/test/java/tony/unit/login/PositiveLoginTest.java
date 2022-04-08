@@ -33,7 +33,8 @@ public class PositiveLoginTest {
 	webInteraction.color ("color", "//input[@id='input-type-color']", "20", "15", "89");
 	webInteraction.inputClick("normal button", "//button[text()='Normal button']");
 	webInteraction.selectFile("file", "//input[@id='input-type-file']", "C:\\development\\file.txt");
+	webInteraction.range("range", "//*[@id=\"input-type-range\"]");
 	webInteraction.changeFrame(null);
-	//prueba
+	//test
 }
 }

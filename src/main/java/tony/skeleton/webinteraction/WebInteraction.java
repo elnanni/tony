@@ -96,10 +96,29 @@ public class WebInteraction {
 		actionProvider.sendKeys(color2).build().perform();
 		actionProvider.sendKeys(Keys.TAB).build().perform();
 		actionProvider.sendKeys(color3).build().perform();
-		}
+	}
 	
 	@SuppressWarnings("deprecation")
 	public void selectFile(String name, String locator, String value) {
 		new WebDriverWait(browser, 10).until(ExpectedConditions.elementToBeClickable(By.xpath(locator))).sendKeys(value);
 	}
+	
+	public void range(String name, String locator) { 
+	    browser.findElement(By.xpath(locator)).click();
+	    browser.findElement(By.xpath(locator)).sendKeys(Keys.RIGHT);
+        browser.findElement(By.xpath(locator)).sendKeys(Keys.RIGHT);
+        browser.findElement(By.xpath(locator)).sendKeys(Keys.RIGHT);
+        browser.findElement(By.xpath(locator)).sendKeys(Keys.RIGHT);
+        browser.findElement(By.xpath(locator)).sendKeys(Keys.RIGHT);
+        browser.findElement(By.xpath(locator)).sendKeys(Keys.RIGHT);
+        browser.findElement(By.xpath(locator)).sendKeys(Keys.RIGHT);
+        browser.findElement(By.xpath(locator)).sendKeys(Keys.RIGHT);
+        browser.findElement(By.xpath(locator)).sendKeys(Keys.RIGHT);
+        browser.findElement(By.xpath(locator)).sendKeys(Keys.RIGHT);
+        browser.findElement(By.xpath(locator)).sendKeys(Keys.RIGHT);
+        browser.findElement(By.xpath(locator)).sendKeys(Keys.RIGHT);
+        browser.findElement(By.xpath(locator)).sendKeys(Keys.RIGHT);
+        browser.findElement(By.xpath(locator)).sendKeys(Keys.RIGHT);
+	} 		
 }
+
